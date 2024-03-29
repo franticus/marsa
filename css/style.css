@@ -1851,3 +1851,22 @@ textarea::placeholder {
 #animatedText.show {
   opacity: 1;
 }
+
+.flip {
+  animation: rotate 6s ease-in-out infinite;
+}
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  30% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
