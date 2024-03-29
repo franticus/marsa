@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Marsa</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-wrapper">
+            <span>Let's discuss the details of our collaboration:</span>
+            <div class="header__top-item">
+              <img src="img/phone.svg" alt="marsa" />
+              <a href="tel:+375 33 315 7274">+375 33 315 7274</a>
+            </div>
+            <div class="header__top-item">
+              <img src="img/mail.svg" alt="marsa" />
+              <a href="mailto:marsa.by@gmail.com">marsa.by@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-wrapper">
+            <a href="index.html" class="header__bottom-logo">
+              <img src="img/logo.svg" alt="marsa" />
+            </a>
+            <nav class="header-nav">
+              <a href="index.html">Home</a>
+              <a href="lead.html">Lead generation</a>
+              <a href="services.html">Services</a>
+              <a href="about.html">About us</a>
+              <a href="contacts.html">Contacts</a>
+            </nav>
+            <div class="header__btn">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="top-page__bg"></div>
+      <section class="top-page section-light contacts-section">
+        <div class="container">
+          <h1>Contacts</h1>
+        </div>
+      </section>
+      <section class="section contacts-section section-light">
+        <div class="container">
+          <h2>Get in touch with us:</h2>
+          <div class="grid grid-page">
+            <div class="contact__item">
+              <span>Phone:</span>
+              <div class="contact__item-link">
+                <img src="img/phone.svg" alt="marsa" />
+                <a href="tel:+375 33 315 7274">+375 33 315 7274</a>
+              </div>
+              <span>Viber / WhatsApp</span>
+            </div>
+
+            <div class="contact__item">
+              <span>Email:</span>
+              <div class="contact__item-link">
+                <img src="img/mail.svg" alt="marsa" />
+                <a href="mailto:marsa.by@gmail.com">marsa.by@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <span>Website:</span>
+              <div class="contact__item-link">
+                <img src="img/link.svg" alt="marsa" />
+                <a href="https://marsa.by/">https://marsa.by/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-image contacts-form">
+        <div class="container">
+          <h2>Submit a request to discuss collaboration details</h2>
+
+          <form class="form" action="send-form.php" method="post">
+            <div class="form__inputs">
+              <input type="text" required name="name" placeholder="Your Name" />
+              <input
+                type="tel"
+                required
+                name="phone"
+                placeholder="Phone Number"
+              />
+            </div>
+            <textarea
+              required
+              placeholder="Describe the subject of your business"
+              name="text"
+            ></textarea>
+            <button class="btn" required type="submit">
+              submit application
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2024 Lead Generation for Businesses. Next Step - MARSA. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
