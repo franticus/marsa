@@ -181,6 +181,10 @@ h2 strong {
   transition: 0.3s ease;
 }
 
+.btn_hero {
+  animation: fadeIn 3.5s ease-in-out forwards;
+}
+
 .btn-2 {
   cursor: pointer;
   padding: 20px;
@@ -389,7 +393,9 @@ h2 strong {
 
 .top__title {
   width: 891px;
+  height: 200px;
   padding-top: 102px;
+  animation: fadeIn .4s ease-in-out forwards;
 }
 
 .top__title h1 {
@@ -1749,6 +1755,11 @@ textarea::placeholder {
   z-index: -1;
 }
 
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
 @media (max-width: 1570px) {
   .top__video-bg {
     width: auto;
@@ -1791,4 +1802,52 @@ textarea::placeholder {
     width: 15rem;
     height: 15rem;
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink-cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typewriter {
+  border-right: 3px solid;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+.char {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(100%);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#animatedText {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+#animatedText.show {
+  opacity: 1;
 }
